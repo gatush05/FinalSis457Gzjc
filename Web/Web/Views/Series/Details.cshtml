@@ -1,0 +1,65 @@
+﻿@model Web.Models.Serie
+
+@{
+    ViewData["Title"] = "Detalles de serie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-xxl py-5">
+	<div class="container">
+<h1>DETALLES DE SERIE</h1>
+
+<div>
+  
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sinopsis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sinopsis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Duracion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Duracion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaEstreno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaEstreno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UsuarioRegistro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsuarioRegistro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RegistroActivo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RegistroActivo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" title="Editar"><i class="fas fa-edit"></i></a> |
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+</div>
+</div>

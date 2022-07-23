@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Web.Models.Serie>
+
+@{
+    ViewData["Title"] = "SERIE";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-xxl py-5">
+	<div class="container">
+
+<h1>SERIES</h1>
+
+<p>
+    <a asp-action="Create"><i class="fas fa-plus-circle"></i>Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Sinopsis</th>
+            <th>Director</th>
+            <th>Duración</th>
+            <th>Fecha de Estreno</th>
+            <th>Usuario Registro</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sinopsis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Director)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaEstreno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioRegistro)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" title="Editar"><i class="fas fa-edit"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.Id" title="detalles"><i class="fas fa-eye"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+</div>
