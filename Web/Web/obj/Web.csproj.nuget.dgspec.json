@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\final\\Web\\Web\\Web.csproj": {}
+    "D:\\final\\Web\\Web\\Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\final\\Web\\Web\\Web.csproj": {
+    "D:\\final\\Web\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\final\\Web\\Web\\Web.csproj",
+        "projectUniqueName": "D:\\final\\Web\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "C:\\Users\\HP\\Desktop\\final\\Web\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\final\\Web\\Web\\obj\\",
+        "projectPath": "D:\\final\\Web\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\Mili\\.nuget\\packages\\",
+        "outputPath": "D:\\final\\Web\\Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Mili\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
         },
         "frameworks": {
           "net6.0": {
